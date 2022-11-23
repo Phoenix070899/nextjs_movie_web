@@ -1,0 +1,14 @@
+.cur_page {
+    color: var(--red);
+    background-color: var(--light-grey);
+    font-weight: 600;
+}
+.cur_page::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: var(--red);
+    border-radius: 0 3px 3px 0;
+}

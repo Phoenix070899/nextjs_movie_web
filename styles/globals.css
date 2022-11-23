@@ -1,3 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --black: rgb(27,26,29);
+  --grey: rgb(38,36,40);
+  --light-grey: rgb(45,46,52);
+  --red: rgb(243,61,32);
+  --dark-text: rgb(115,124,130);
+  --text-white: rgb(250,250,250);
+  --transition: all 0.2 ease-out;
+}
+
+
 html,
 body {
   padding: 0;
@@ -20,7 +35,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
-    background: black;
+    color: var(--text-white);
+    background: var(--black)
   }
 }

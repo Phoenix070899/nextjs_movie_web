@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    grid-template-columns:  minmax(min-content, 250px) auto  minmax(min-content, 200px);
+}
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    background-color: var(--grey);
+    height: 100vh;
+    max-width: 350px;
+}
+.navbar_logo {
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar_logo h2 {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navbar_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.list_item {
+    position: relative;
+    color: var(--dark-text);
+    margin: 0.5rem 0;
+    padding: 0 0 0 1rem;
+    width: 100%;
+}
+
+.list_item a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 90%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: all 0.3s;
+}
+.list_item a:hover {
+    color: var(--red);
+}
